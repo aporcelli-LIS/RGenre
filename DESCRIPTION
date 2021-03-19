@@ -1,0 +1,15 @@
+Package: Genre
+Type: Package
+Title: Assess the percentage of genre material in a collection
+Version: 0.0.0.9000
+Author: Angela Porcelli<aporcelli@usf.edu>
+Maintainer: Angela Porcelli<aporcelli@usf.edu>
+Description: Genre compares inputs of a collection's total genre materials, inbound genre
+    requests, and genre circulated materials in relation to collection materials,
+    inbound requests, and circulated department materials. Genre's output will
+    contain a percentage and pie chart of genre usage.
+Depends: R (>= 4.0.4)
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1

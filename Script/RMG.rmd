@@ -1,0 +1,50 @@
+---
+title: "Genre Build"
+author: "Angela Porcelli"
+date: "4/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Genre Program
+
+The Genre program can assist librarians in ascertaining the makeup of their collection based upon material genre. Knowing the collection makeup can illuminate deficiencies in the genre that need addressing to have a well-rounded materials collection. Users could also substitute a specific need or material type for the genre. For example, the user could use the Genre program to compare the number of materials on sharks against the total amount of non-fiction animal materials or the number of books on CD to the total amount of audiovisual materials.
+
+For this report, I am comparing the amount of mystery genre materials available from Seminole Community Library’s Juvenile collection to the entirety of the library’s Juvenile collection. The library has 21,488 in its juvenile collection, and of these items, 884 had a subject heading of mystery. 
+
+```  
+{
+dm<-as.integer(readline(prompt= "Total number of department materials: "))
+gm<-as.integer(readline(prompt="Total number of genre materials: "))
+divide<-function(x,y){
+     return(x/y)
+     }
+result <-(divide(gm, dm)*100)
+print(paste('Percentage of genre materials:', result))
+
+
+
+ir<-as.integer(readline(prompt= "Total number of inbound materials request: "))
+igr<-as.integer(readline(prompt="Total number of inbound genre materials request: "))
+divide<-function(x,y){
+     return(x/y)
+     }
+result <-(divide(igr, ir)*100)
+print(paste('Percentage of inbound genre materials requested:', result))
+ 
+ 
+ 
+tdm<-as.integer(readline(prompt= "Total circulated department materials: "))
+tgm<-as.integer(readline(prompt="Total circulated department materials of genre: "))
+divide<-function(x,y){
+     return(x/y)
+     }
+result <-(divide(tgm, tdm)*100)
+print(paste('Percentage of circulating department genre materials:', result))
+}
+```
+
+This code allows me to convert my inputted numerical data into percentages allowing for easy data analysis. For example, looking at the above numbers (21,488 and 884), I have a hard time recognizing the exact difference between the collection as a whole and the amount of juvenile mystery material. After running the numbers through the code, I find that mystery materials make up approximately 4% of the Juvenile collection. Since mystery books help children build connections between cause and effect, the department supervisor may want to increase the number of materials owned in this genre.  
